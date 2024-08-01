@@ -16,6 +16,7 @@ export function AppleCardsCarouselDemo() {
         <Carousel items={cards} />
       </div>
     );
+    
   }
    
   const DummyContent = () => {
