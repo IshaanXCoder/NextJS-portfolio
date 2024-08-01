@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "../../app/lib/utils";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useCallback } from "react";
 import { createNoise3D } from "simplex-noise";
 
 export const WavyBackground = ({
@@ -35,6 +35,7 @@ export const WavyBackground = ({
     ctx: any,
     canvas: any;
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  
   const getSpeed = () => {
     switch (speed) {
       case "slow":
@@ -46,7 +47,7 @@ export const WavyBackground = ({
     }
   };
 
-  const init = () => {
+  const init = useCallback(() => {
     canvas = canvasRef.current;
     ctx = canvas.getContext("2d");
     w = ctx.canvas.width = window.innerWidth;
@@ -59,7 +60,7 @@ export const WavyBackground = ({
       ctx.filter = `blur(${blur}px)`;
     };
     render();
-  };
+  }, [blur]);
 
   const waveColors = colors ?? [
     "#38bdf8",
@@ -68,6 +69,7 @@ export const WavyBackground = ({
     "#e879f9",
     "#22d3ee",
   ];
+
   const drawWave = (n: number) => {
     nt += getSpeed();
     for (i = 0; i < n; i++) {
@@ -97,11 +99,11 @@ export const WavyBackground = ({
     return () => {
       cancelAnimationFrame(animationId);
     };
-  }, []);
+  }, [init]);
 
   const [isSafari, setIsSafari] = useState(false);
   useEffect(() => {
-    // I'm sorry but i have got to support it on safari.
+    // I'm sorry but I have got to support it on safari.
     setIsSafari(
       typeof window !== "undefined" &&
         navigator.userAgent.includes("Safari") &&
