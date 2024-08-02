@@ -14,16 +14,6 @@ const languages = [
   { name: 'Da Vinci Resolve', logo: '/logos/DaVinci.png' },
   { name: 'Premiere Pro', logo: '/logos/PremPro Background r.png' },
   { name: 'Lightroom', logo: '/logos/Lightroom.png' },
-  { name: 'HTML', logo: '/logos/HTML.png' },
-  { name: 'CSS', logo: '/logos/CSS.png' },
-  { name: 'JavaScript', logo: '/logos/JS.png' },
-  { name: 'React', logo: '/logos/React.png' },
-  { name: 'Next.js', logo: '/logos/nexttjs.png' },
-  { name: 'Node.js', logo: '/logos/Node.webp' },
-  { name: 'C++', logo: '/logos/CPP.png' },
-  { name: 'Da Vinci Resolve', logo: '/logos/DaVinci.png' },
-  { name: 'Premiere Pro', logo: '/logos/PremPro Background r.png' },
-  { name: 'Lightroom', logo: '/logos/Lightroom.png' },
 ];
 
 const scroll = keyframes`
