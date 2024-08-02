@@ -4,7 +4,7 @@ import { LayoutGrid } from "./ui/layout-grid";
 export function LayoutGridDemo() {
   return (
     <div className="h-screen py-20 w-full">
-      <h1 className="text-4xl font-bold text-white mb-8">Life Lately</h1>
+      <h1 className="text-4xl font-bold text-white text-center mb-8">Life Lately</h1>
       <LayoutGrid cards={cards} />
     </div>
   );

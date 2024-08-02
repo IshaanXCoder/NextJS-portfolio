@@ -91,7 +91,7 @@ const Logo = styled.img`
 const Carousel: React.FC = () => {
   return (
     <Section>
-      <Heading>Technologies and Software I Use</Heading>
+      <h2 className="text-3xl font-bold text-slate-100 mb-8">Languages, Frameworks & Softwares i work on</h2>
       <CarouselContainer>
         <CardsWrapper>
           {languages.concat(languages).map((language, index) => (

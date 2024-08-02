@@ -6,8 +6,6 @@ import { HeroParallaxDemo } from "@/components/HeroParallax";
 import { EvervaultCardDemo } from "@/components/Socials";
 import { ImagesSliderDemo } from "@/components/slider";
 import Carousel from '@/components/Carousel';
-import { LayoutGridDemo } from '@/components/LayoutGrid';
-import { useState, useEffect } from 'react'
 
 
 export default function Home() {
@@ -16,7 +14,7 @@ export default function Home() {
       <HeroParallaxDemo />
       <EvervaultCardDemo />
       <Carousel />
-      <LayoutGridDemo />
+
       <ThreeDpin />
       <ImagesSliderDemo />
     </main>

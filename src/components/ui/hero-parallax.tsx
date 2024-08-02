@@ -79,7 +79,7 @@ export const HeroParallax = ({
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row mb-20 space-x-20 ">
+        <motion.div className="flex flex-row mb-20 space-x-20">
           {secondRow.map((product) => (
             <ProductCard
               product={product}
@@ -131,7 +131,7 @@ export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-        Hello Everybody <br /> Welcome to Ishaan's portfolio
+        Hello Everybody <br /> Welcome to Ishaan&apos;s portfolio
       </h1>
       
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
@@ -160,12 +160,11 @@ export const ProductCard = ({
       whileHover={{
         y: -20,
       }}
-      key={product.title}
       className="group/product h-96 w-[30rem] relative flex-shrink-0"
     >
       <Link
         href={product.link}
-        className="block group-hover/product:shadow-2xl "
+        className="block group-hover/product:shadow-2xl"
       >
         <Image
           src={product.thumbnail}
