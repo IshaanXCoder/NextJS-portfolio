@@ -18,7 +18,7 @@ export function EvervaultCardDemo() {
           <h2 className="dark:text-white text-black mt-4 text-sm font-light">
           🐈‍⬛ A random guy obsessed with green dots @<a href="https://www.github.com/IshaanXCoder" target="_blank" rel="noopener noreferrer">Github</a><br />
           📈 Learning DSA in C++<br />
-          🎓 OPJEMS Scholar | IIT Roorkee'27
+          🎓 OPJEMS Scholar 2024 | IIT Roorkee28
           </h2>
         </div>
 

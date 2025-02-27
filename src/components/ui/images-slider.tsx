@@ -37,10 +37,6 @@ export const ImagesSlider = ({
   };
 
   useEffect(() => {
-    loadImages();
-  }, []);
-
-  const loadImages = () => {
     setLoading(true);
     const loadPromises = images.map((image) => {
       return new Promise((resolve, reject) => {
@@ -50,14 +46,14 @@ export const ImagesSlider = ({
         img.onerror = reject;
       });
     });
-
+  
     Promise.all(loadPromises)
       .then((loadedImages) => {
         setLoadedImages(loadedImages as string[]);
         setLoading(false);
       })
       .catch((error) => console.error("Failed to load images", error));
-  };
+  }, [images]); // ✅ Fix: Add `images` as a dependency
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "ArrowRight") {
@@ -66,22 +62,21 @@ export const ImagesSlider = ({
         handlePrevious();
       }
     };
-
+  
     window.addEventListener("keydown", handleKeyDown);
-
-    // autoplay
+  
     let interval: any;
     if (autoplay) {
       interval = setInterval(() => {
         handleNext();
       }, 5000);
     }
-
+  
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
       clearInterval(interval);
     };
-  }, []);
+  }, [autoplay, handleNext, handlePrevious]); // ✅ Fix: Added dependencies
 
   const slideVariants = {
     initial: {

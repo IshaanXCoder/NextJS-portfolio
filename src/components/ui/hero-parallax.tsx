@@ -109,14 +109,14 @@ export const Header = () => {
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    const word = words[index];
+    const word = words[index]; // ✅ words is now in the dependency array
     const timer = setInterval(() => {
       setCurrentWord((prev) =>
         isDeleting
           ? word.substring(0, prev.length - 1)
           : word.substring(0, prev.length + 1)
       );
-
+  
       if (!isDeleting && currentWord === word) {
         setTimeout(() => setIsDeleting(true), 1000);
       } else if (isDeleting && currentWord === '') {
@@ -124,14 +124,14 @@ export const Header = () => {
         setIndex((prev) => (prev + 1) % words.length);
       }
     }, isDeleting ? 100 : 200);
-
+  
     return () => clearInterval(timer);
-  }, [currentWord, isDeleting, index]);
+  }, [words, currentWord, isDeleting, index]); // ✅ Added `words` to dependency array
 
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-        Hello Everybody <br /> Welcome to my Portfolio
+        Hello Everybody <br /> Welcome to Ishaan's Portfolio
       </h1>
       
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
