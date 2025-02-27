@@ -17,7 +17,8 @@ export function EvervaultCardDemo() {
   
           <h2 className="dark:text-white text-black mt-4 text-sm font-light">
           🐈‍⬛ A random guy obsessed with green dots @<a href="https://www.github.com/IshaanXCoder" target="_blank" rel="noopener noreferrer">Github</a><br />
-          📈 Learning DSA in C++
+          📈 Learning DSA in C++<br />
+          🎓 OPJEMS Scholar | IIT Roorkee'27
           </h2>
         </div>
 
@@ -31,8 +32,9 @@ export function EvervaultCardDemo() {
           <EvervaultCard text="About" />
   
           <h2 className="dark:text-white text-black mt-4 text-sm font-light py-3">
-            🌟 Passionate about web development <br />
-            🛠️ Building projects with React and Next.js!
+            🌟 Passionate about web development & blockchain<br />
+            🛠️ Building projects with React, Next.js & Foundry<br />
+            ⚡ Exploring Solidity, DeFi & smart contracts!
           </h2>
         </div>
 
@@ -46,7 +48,9 @@ export function EvervaultCardDemo() {
           <EvervaultCard text="Me!" />
   
           <h2 className="dark:text-white text-black mt-4 text-sm font-light">
-          🚀 Excited to collaborate on innovative projects and explore new opportunities.<br />
+          🚀 Hackathon Enthusiast | Blockchain Innovator<br />
+          🏆 Built AI simulators, DeFi apps & staking games<br />
+          🔗 Always open to collaborations & exciting projects!
           </h2>
         </div>
 
