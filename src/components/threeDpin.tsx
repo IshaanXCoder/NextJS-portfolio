@@ -32,8 +32,8 @@ const ThreeDpin: React.FC = () => {
           </div>
         </PinContainer>
         <PinContainer
-          title="@Ishhaaaaaaaan"
-          href="https://x.com/Ishhaaaaaaaan"
+          title="@0xIshaanK06"
+          href="https://x.com/0xIshaanK06"
         >
           <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem]">
             <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100">
