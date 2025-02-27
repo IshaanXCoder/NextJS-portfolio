@@ -4,6 +4,9 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 
 const technologies = [
+  { name: "Da Vinci Resolve", logo: "/logos/DaVinci.png", link: "https://www.blackmagicdesign.com/products/davinciresolve" },
+  { name: "Premiere Pro", logo: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Adobe_Premiere_Pro_Logo.svg", link: "https://www.adobe.com/products/premiere.html" },
+  { name: "Lightroom", logo: "https://imgs.search.brave.com/ZajMvRgPnSJC4Yt7QlPJAKxtqUsycGfUlZ_YlB7yW-I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9i/L2I2L0Fkb2JlX1Bo/b3Rvc2hvcF9MaWdo/dHJvb21fQ0NfbG9n/by5zdmc", link: "https://www.adobe.com/products/photoshop-lightroom.html" },
   { name: "HTML", logo: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg", link: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
   { name: "CSS", logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg", link: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
   { name: "JavaScript", logo: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png", link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
@@ -11,9 +14,6 @@ const technologies = [
   { name: "Next.js", logo: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg", link: "https://nextjs.org/" },
   { name: "Flask", logo: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg", link: "https://flask.palletsprojects.com/" },
   { name: "C++", logo: "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg", link: "https://cplusplus.com/" },
-  { name: "Da Vinci Resolve", logo: "/logos/DaVinci.png", link: "https://www.blackmagicdesign.com/products/davinciresolve" },
-  { name: "Premiere Pro", logo: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Adobe_Premiere_Pro_Logo.svg", link: "https://www.adobe.com/products/premiere.html" },
-  { name: "Lightroom", logo: "https://imgs.search.brave.com/ZajMvRgPnSJC4Yt7QlPJAKxtqUsycGfUlZ_YlB7yW-I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9i/L2I2L0Fkb2JlX1Bo/b3Rvc2hvcF9MaWdo/dHJvb21fQ0NfbG9n/by5zdmc", link: "https://www.adobe.com/products/photoshop-lightroom.html" },
   { name: "Solidity", logo: "https://upload.wikimedia.org/wikipedia/commons/9/98/Solidity_logo.svg", link: "https://soliditylang.org/" },
   { name: "Foundry", logo: "https://book.getfoundry.sh/images/foundry-banner.png", link: "https://book.getfoundry.sh/" },
   { name: "Aave", logo: "https://imgs.search.brave.com/SFhX5fwmAcZVG7nbjgPg54d4ggKejTBI3Vq252myBr0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZXMu/Y29pbnBhcGVyLmNv/bS9jb2lucGFwZXIv/Zl93ZWJwLGNfbGlt/aXQsd18zODQwLHFf/YXV0bzpnb29kL2Fh/dmVfYWF2ZV9sb2dv/X2NjNTA4MWRiMTMu/cG5n", link: "https://aave.com/" },
